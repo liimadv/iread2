@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --roxo: #4F30FF;
+}
+
+::selection {
+    background-color: var(--roxo);
+    color: #fff;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: var(--roxo);
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+}
+
+h4 {
+    margin: 0;
+    text-transform: uppercase;
+    color: #fff;
+}
+#area-busca {
+    background-color: #fbfbfb;
+    border-bottom: 1px solid #909090;
+    padding: 10px 20px;  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+#area-busca input {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    outline: 0;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    color:#000;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#area-busca button {
+    width: 60%;
+    border: none;
+    padding: 10px;
+    outline: 0;
+    background-color: var(--roxo);
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+#area-busca h4{
+    color: #000;
+    font-size: 25px;
+    padding: 10px 0px;
+}
+
+#titulo {
+    width: 90%;
+    padding: 20px 5% 20px 5%;
+}
+
+h2{
+    margin: 0;
+    text-transform: uppercase;
+    padding-left: 10px;
+    border-bottom: 1px solid var(--roxo);
+}
+#livros {
+    max-width: 90%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.livro {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 29px -14px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+.livro:hover {
+    box-shadow: 0px 0px 29px -14px rgba(0,0,0,0.5);
+    rotate: 1deg;
+}
+.livro img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.livro a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.livro a:hover{
+    color: var(--roxo);
+}
+
+.livro .capa {
+    max-width: 200px;
+}
+
+.livro p {
+    margin: 0;
+    text-align: justify;
+}
+
+.livro .desc {
+    padding-bottom: 15px;
+}
+
+.livro ~ .nota {
+    text-align: start;
+}
